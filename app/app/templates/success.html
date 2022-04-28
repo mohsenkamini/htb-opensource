@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upcloud - Upload files for Free!</title>
+
+    <script src="{{ url_for('static',filename='vendor/jquery/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='vendor/popper/popper.min.js') }}"></script>
+
+    <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href=" {{ url_for('static',filename='vendor/bootstrap/css/bootstrap-grid.css') }}"/>
+    <link rel="stylesheet" href=" {{ url_for('static',filename='vendor/bootstrap/css/bootstrap-reboot.css') }}"/>
+    <link rel="stylesheet" href=" {{ url_for('static',filename='css/style.css') }}"/>
+
+    <link rel="stylesheet" href=" {{ url_for('static',filename='vendor/font-awesome/all.min.css') }}"/>
+
+</head>
+<body>
+
+
+<div class="drag-area" style="color: white; padding: 20px">
+
+    <h3>Success!</h3>
+
+    <p>Your <a style="text-decoration: none;" href="{{ file_url }}">file</a> has been uploaded.</p>
+
+    <div class="input-group">
+
+        <input type="text" class="form-control"
+               value="{{ file_url }}" placeholder="Some path" id="copy-input">
+
+        <button class="btn btn-success" type="button" id="btnCopy">
+            Copy
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',filename='js/script.js') }}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upcloud - Upload files for Free!</title>
+
+    <script src="{{ url_for('static',filename='vendor/jquery/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='vendor/popper/popper.min.js') }}"></script>
+
+    <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href=" {{ url_for('static',filename='vendor/bootstrap/css/bootstrap-grid.css') }}"/>
+    <link rel="stylesheet" href=" {{ url_for('static',filename='vendor/bootstrap/css/bootstrap-reboot.css') }}"/>
+
+    <link rel="stylesheet" href=" {{ url_for('static',filename='vendor/font-awesome/all.min.css') }}"/>
+
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-muted">Nothing to read here.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                        <li><a href="#" class="text-white">Like on Facebook</a></li>
+                        <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong>upcloud</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h3 class="display-3">Welcome to upcloud!</h3>
+            <p>Transfer files for free & share them without registration with your friends</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Simple</h2>
+                <p>upcloud is flexible, and scales well. Uploaded files can be shared across users in seconds with a
+                    simple link. Since we are big fans of the KISS principle, there is no authentication required in our
+                    system,
+                    so you don't have to remember complicated passwords.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Secure</h2>
+                <p>Security is a top priority for us. For this reason, code is reviewed by several people. In order to
+                    create secure code, we also make use of secure coding methods, such as static and
+                    dynamic security measures.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>OpenSource</h2>
+                <p>We are convinced that open software guarantees higher quality, because possible bugs can be
+                    discovered and fixed not only by the developers themselves, but by a large community of
+                    developers.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Try upcloud</h1>
+            <p class="lead text-muted">
+                To explore the full extent of upcloud, please checkout the links below. <br>For setting up, download and
+                unzip the package if you haven’t already.
+            <p>
+                <a href="/download" class="btn btn-primary my-2">Download</a>
+            </p>
+        </div>
+
+        <div class="container">
+            <p class="lead text-muted">
+                You wanna take some time to explore the interface? We also provide immediate access to an upcloud test
+                instance.
+            <p>
+                <a href="/upcloud" class="btn btn-secondary my-2">Take me there!</a>
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="bg-light text-center text-lg-start">
+
+    <div class="text-center p-3">
+        © 2022 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">upcloud</a>
+    </div>
+</footer>
+
+</body>
+</html>
