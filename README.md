@@ -1,5 +1,16 @@
 # htb-opensource
 
+## 📖 Documentation
+-----
+- [User Access](#user-access)
+  - [LFI](#lfi)
+  - [Reverse shell](#reverse-shell)
+  - [Pivoting](#pivoting)
+  - [User Credentials](#user-credentials)
+- [Root Access](#root-access)
+  - [Privilege Escalation](#privilege-escalation)
+
+
 # User Access
 ### LFI
 
@@ -86,7 +97,7 @@ using the creds to login inside the gitea and found an `id_rsa` which enables lo
 
 # Root Access
 
-### privilege escalation
+### Privilege Escalation
 
 Running `linpeas` show `/bin/bash` has `sbit`/`SUID` enabled. running `/bin/bash -p` provides root access.
 
