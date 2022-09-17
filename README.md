@@ -86,6 +86,8 @@ using the creds to login inside the gitea and found an `id_rsa` which enables lo
 
 # Root Access
 
+### privilege escalation
+
 Running `linpeas` show `/bin/bash` has `sbit`/`SUID` enabled. running `/bin/bash -p` provides root access.
 
 
